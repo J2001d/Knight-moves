@@ -59,6 +59,16 @@ function check(ele){
   }
   return ans;
 }
+var times = 1;
+document.querySelectorAll('.box').forEach(ele => {
+ele.addEventListener('click', function () {
+  if(times === 1){
+    ele.innerText = 'knight';
+    insertKnight();
+  }
+  times++;
+})  
+})
 
 document.querySelectorAll('.box').forEach(item => {
   item.addEventListener('click', function () {
